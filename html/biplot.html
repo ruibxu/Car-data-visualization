@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Car data visualization</title>
+        <link rel="stylesheet" href="../style/index.css">
+        <script src="https://d3js.org/d3.v4.min.js"></script>        
+    </head>
+    <body>
+        <h1 ><b>Car data visualization</b></h1>
+        <h2><b>biplot</b></h2>
+        <button onclick="window.location.href='../index.html';">Correlation Matrix</button>
+        <button onclick="window.location.href='./scatterplotmatrix.html';">Scatterplot Matrix</button>
+        <button onclick="window.location.href='./parallelcoordinates.html';">Parallel coordinates chart</button>
+        <button onclick="window.location.href='./PCA.html';">PCA plot</button>
+        <button onclick="window.location.href='./MDS1.html';">MDS(Euclidian distance)</button>
+        <button onclick="window.location.href='./MDS2.html';">MDS(1-|correlation| distance)</button>
+        <br>        
+        <div id="svg">
+        </div>
+        
+        <script src="../scripts/biplot.js"></script>
+          
+    </body>
+</html>

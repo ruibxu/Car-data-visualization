@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Car data visualization</title>
+        <link rel="stylesheet" href="../style/index.css">
+        <script src="https://d3js.org/d3.v4.min.js"></script>        
+    </head>
+    <body>
+        <h1 ><b>Car data visualization</b></h1>
+        <h2><b>Scatterplot</b></h2>
+        <button onclick="window.location.href='../index.html';">Bar chart</button>
+        <button onclick="window.location.href='./PieChart.html';">Pie Chart</button>
+        <div>     
+                    <label for="inputXAxis" >Input X-axis:</label>
+                    <select  id="inputXAxis" onchange="updateSelect()">
+                        <option >Select input x axis</option>
+                        <option >Sales_in_thousands</option>
+                        <option >year_resale_value</option>
+                        <option >Price_in_thousands</option>
+                        <option >Engine_size</option>
+                        <option >Horsepower</option>
+                        <option >Wheelbase</option>
+                        <option >Curb_weight</option>
+                        <option >Fuel_capacity</option>
+                        <option >Fuel_efficiency</option>
+                        <option >Power_perf_factor</option>
+                    </select>
+                <br>
+                    <label for="inputYAxis">Input Y-axis:</label>
+                    <select id="inputYAxis" onchange="updateSelect()">
+                      <option >Select input y axis</option>
+                      <option >Sales_in_thousands</option>
+                      <option >year_resale_value</option>
+                      <option >Price_in_thousands</option>
+                      <option >Engine_size</option>
+                      <option >Horsepower</option>
+                      <option >Wheelbase</option>
+                      <option >Curb_weight</option>
+                      <option >Fuel_capacity</option>
+                      <option >Fuel_efficiency</option>
+                      <option >Power_perf_factor</option>
+                    </select>
+        </div>
+
+
+        <div id="svg">        
+        </div>
+        <script src="../scripts/sp.js"></script>
+    </body>
+</html>

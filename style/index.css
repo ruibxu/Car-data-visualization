@@ -1,0 +1,32 @@
+body {
+    background-color:white;
+  }
+  
+  h1 {
+    margin-left: 20px;
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+  }
+  div.bar{
+    display: inline-block;
+    margin-top: 50px;
+    width: 20px;
+    height: 75px;
+    margin-right: 2px;
+    background-color: teal;
+
+  }
+  div.circle{
+    margin-top: 50px;
+    height: 100px;
+    display: inline-block;
+  }
+
+  .wrapper {
+    display: grid;
+    gap:50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }

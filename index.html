@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Car data visualization</title>
+        <link rel="stylesheet" href="style/index.css">
+        <script src="https://d3js.org/d3.v4.min.js"></script>      
+        
+    </head>
+    <body >
+        <h1 ><b>Car data visualization</b></h1>
+        <div>     
+            <label for="inputAxis">Input X axis:</label>
+                <select id="inputAxis" onchange="updateSelect()">
+                    <option >Select input x axis</option>
+                    <option >Sales_in_thousands</option>
+                    <option >year_resale_value</option>
+                    <option >Engine_size</option>
+                    <option >Horsepower</option>
+                    <option >Wheelbase</option>
+                    <option >Curb_weight</option>
+                    <option >Fuel_capacity</option>
+                    <option >Fuel_efficiency</option>
+                </select>
+        </div>
+        <div class="wrapper">     
+            <div id="svg1">
+            </div>
+            <div id="svg2">
+            </div>
+            <div id="svg3">
+            </div>
+            <div id="svg4">
+            </div>
+            <div id="svg5">
+            </div>
+        </div>
+        <script src="scripts/lab5.js"></script>
+        
+    </body>
+</html>
